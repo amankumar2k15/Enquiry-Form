@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/404f36c780.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <!-- <---------------------Enquiry Container Starts-------------------->
+    <div class="enquiry-container">
+
+        <div class="img-container">
+            <img src="img/enq-img.webp " id="background-img" alt="">
+        </div>
+
+        <div class="form-container">
+
+            <div class="box">
+                <div class="line"></div>
+            </div>
+
+            <h3>Enquiry Form </h3>
+            <div class="form">
+                <input type="text" name="Name" pattern="[a-zA-Z]{2,15}" placeholder="Enter name*" id="userName" required
+                    autofocus />
+            </div>
+            <div class="form">
+                <input type="text" name="Email" placeholder="Enter Email Address*" id="userEmail" required />
+            </div>
+            <div class="form">
+                <input type="tel" name="Contact no." placeholder="Enter Mobile Number*" id="userNum" required
+                    autocomplete="off" />
+            </div>
+            <div class="form">
+                <select id="userCourse">
+                    <option value="none">Select Course*</option>
+                    <option value="Graphic Design Course">Graphic Design Course</option>
+                    <option value="Web Design Course">Web Design Course</option>
+                    <option value="PHP Course">PHP Course</option>
+                    <option value="UI/UX Course">UI/UX Course</option>
+                    <option value="Full Stack Development">Full Stack Development</option>
+                </select>
+            </div>
+
+            <div class="form agreeBox">
+                <input type="checkbox" value="check" />
+                <p>I agree to receive information regarding my submitted enquiry on Dice Academy.</p>
+            </div>
+
+            <div class="form">
+                <input type="button" id="submitBtn" value="SUBMIT">
+            </div>
+        </div>
+
+
+
+
+        <div class="output">
+            <div class="result">
+                <p>Enter your name: <input type="text" placeholder="Enter your Name" id="outName" readonly /> </p>
+                <p>Enter your email: <input type="text" placeholder="Enter your Email" id="outEmail" readonly /></p>
+                <p>Enter your number: <input type="tel" placeholder="Enter your Number" id="outNum" readonly /></p>
+                <p>Selected course: <input type="text" placeholder="Enter your Course" id="outCourse" readonly /></p>
+            </div>
+
+            <div class="actions">
+                <button id="edit">Edit</button>
+                <button id="delete">Delete</button>
+                <button id="confirm">Confirm</button>
+            </div>
+        </div>
+    </div>
+    <!-- <---------------------Enquiry Container End--------------------> -->
+
+
+    <button id="enquiryBtn">Enquire Now!</button>
+
+    <script src="https://kit.fontawesome.com/404f36c780.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
